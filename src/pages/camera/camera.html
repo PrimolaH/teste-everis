@@ -15,16 +15,9 @@
 <ion-content padding>
 <h6>Gostaria de registrar uma imagem sua?</h6>
 
-  <img *ngIf="img" [src]="img" alt="">
-  <button ion-button block (click)="tirarFoto()">Tirar Foto</button>
-
-
   <ion-fab right bottom>
-      <img *ngIf="img" [src]="img" alt="">
-      <button ion-fab block (click)="tirarFoto()"><ion-icon name="ios-camera"></ion-icon></button>
-    <!--<button ion-fab ><ion-icon name="ion-camera"></ion-icon></button>-->
-  
+      <button ion-fab block (click)="tirarFoto()"><ion-icon name="ios-camera"></ion-icon></button>  
   </ion-fab>
 
-  <p><img src="{{img}}"></p>
+  <p><img *ngIf="img" [src]="img" alt=""></p>
 </ion-content>

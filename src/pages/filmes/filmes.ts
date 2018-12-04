@@ -13,8 +13,7 @@ import { FilmeServiceProvider } from '../../providers/filmes/filme-service';
 })
 export class FilmesPage {
   public objeto_feed = {
-    qntd_likes: 12,
-    qntd_comments: 4,
+    qntd_likes: 12
 
   }
 
